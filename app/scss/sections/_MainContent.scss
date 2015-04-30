@@ -1,0 +1,23 @@
+/*======================================================================*\
+    Main Content
+\*======================================================================*/
+
+#MainContent {
+    margin: $gap-lg 0;
+    @media(min-width: $screen-sm-min) {
+        margin: $gap-xl 0;
+    }
+}
+
+.container {
+    @media(min-width: $screen-lg-min) {
+        width: $container-md;
+    }
+}
+
+.clearBoth {
+    @include clearfix();
+    br {
+        display: none;
+    }
+}

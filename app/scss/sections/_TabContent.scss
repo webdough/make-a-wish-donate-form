@@ -1,0 +1,121 @@
+/*======================================================================*\
+    Tab Content
+\*======================================================================*/
+
+#TabContent {
+    border-radius: $border-radius-base;
+    background: $brand-primary-light;
+    background: linear-gradient(to right, $brand-primary 0%, tint($brand-primary, 30) 100%);
+    margin: 0 0 $gap-lg;
+    .portlet-body {
+        padding: $gap-sm;
+        color: $brand-primary-color;
+        @media(min-width: $screen-sm-min) {
+            padding: $gap-lg $gap-lg ($gap-lg - $gap-sm) $gap-lg;
+        }
+        legend,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            color: $brand-primary-color;
+        }
+    }
+    .form-group {
+        &:last-child {
+            margin: 0;
+        }
+    }
+    .btn-group {
+        width: 100%;
+        padding: 0;
+        &.col-md-6 {
+            @media(min-width: $screen-md-min) {
+                width: 100%;
+            }
+        }
+        .btn {
+            margin: 0 $gap-sm $gap-sm 0;
+            border-radius: $border-radius-base;
+            background: $brand-primary-dark;
+            border-width: 0;
+            padding: 0.75em 2em;
+            &:first-child {
+                margin-left: 0;
+            }
+            &.active {
+                background: $brand-secondary;
+                color: $brand-secondary-color;
+                box-shadow: none;
+            }
+            label {
+                margin: 0;
+            }
+        }
+        .input-group {
+            clear: both;
+            @media(min-width: $screen-sm-min) {
+                clear: none;
+            }
+            .input-group-addon {
+                background: $gray-light;
+                border-width: 0;
+            }
+        }
+    }
+    /**
+     * Regular Gift
+     */
+    #radStartDateM2Parent,
+    #radStartDateM3Parent {
+        label {
+            margin: 0 0 0 $gap-sm;
+            font-weight: normal;
+        }
+    }
+    #radStartDateM2Parent {
+        @media(min-width: $screen-md-min) {
+            margin: 0 ($gutter / 2);
+        }
+    }
+    #lblDDtext {
+        font-weight: normal;
+    }
+    .col-md-3,
+    .col-md-6 {
+        @media(min-width: $screen-md-min) {
+            width: 50%;
+            padding: 0;
+        }
+    }
+}
+
+/**
+ * Single Gift / Regular Gift
+ */
+#myTab {
+    border-width: 0;
+    font-size: 0;
+    li {
+        text-align: center;
+        margin: 0;
+        font-size: $font-size-base;
+        width: 50%;
+        a {
+            border-width: 0;
+            margin: 0;
+            border-radius: 0;
+            background: $gray-lighter;
+            color: $brand-default-color;
+        }
+        &.active {
+            a {
+                background: transparent none;
+                color: $brand-primary-color;
+                border-width: 0;
+            }
+        }
+    }
+}

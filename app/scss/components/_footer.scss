@@ -1,0 +1,42 @@
+/*======================================================================*\
+    Footer
+\*======================================================================*/
+
+.footerbar {
+    @include clearfix();
+    padding: $gap-lg 0;
+    background: $gray-light;
+    margin: $gap-lg 0 0 0;
+    font-size: 0;
+    .footer-left,
+    .footer-center,
+    .footer-right {
+        margin: $gap-sm 0;
+        vertical-align: middle;
+        display: inline-block;
+        font-size: $font-size-base;
+        @media(min-width: $screen-sm-min) {
+            margin: 0;
+        }
+        img {
+            max-width: 90%;
+            height: auto;
+        }
+    }
+    .footer-left,
+    .footer-right{
+        @media(min-width: $screen-sm-min) {
+            width: 20%;
+        }
+    }
+    .footer-center {
+        @media(min-width: $screen-sm-min) {
+            width: 60%;
+        }
+    }
+    .footer-right {
+        @media(min-width: $screen-sm-min) {
+            text-align: right;
+        }
+    }
+}

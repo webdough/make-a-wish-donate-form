@@ -1,0 +1,41 @@
+/*======================================================================*\
+    Form
+\*======================================================================*/
+
+legend {
+    border-width: 0;
+    padding: 0;
+    margin: 0 0 $gap-md 0;
+}
+
+.form-group {
+    @include clearfix();
+}
+
+.control-label {
+    font-weight: normal;
+    span {
+        color: $brand-danger;
+    }
+}
+
+.form-control {
+    height: auto;
+    border-width: 0;
+    padding: 0.75em;
+    background: $gray-lighter;
+    box-shadow: none;
+    color: $font-base-color;
+    &:focus,
+    &:active {
+        box-shadow: none;
+    }
+}
+select.form-control {
+    height: 40px;
+}
+input[type="text"] {
+    &.form-control {
+        height: auto;
+    }
+}

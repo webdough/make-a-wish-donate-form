@@ -1,0 +1,19 @@
+/*======================================================================*\
+    Form Body
+\*======================================================================*/
+
+#divDetails {
+    @extend .row;
+    .control-label,
+    .form-inline,
+    .col-md-6 {
+        width: 100%;
+    }
+    #ContentPlaceHolderMain_divComments {
+        .col-md-6 {
+            display: inline-block;
+            float: none;
+            width: auto;
+        }
+    }
+}

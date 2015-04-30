@@ -1,0 +1,84 @@
+/*======================================================================*\
+    Tab Content 2
+\*======================================================================*/
+
+#TabContent2 {
+    margin: 0 0 $gap-lg 0;
+    @media(min-width: $screen-sm-min) {
+        margin: 0 0 $gap-xl 0;
+    }
+    #myTab2 {
+        border-width: 0;
+        li {
+            &.active {
+                a {
+                    background: $brand-default;
+                }
+            }
+            a {
+                border-bottom-width: 0;
+                background: $gray-lighter;
+                color: $font-base-color;
+            }
+        }
+    }
+    #ccDiv,
+    #ddDiv {
+        margin: 0 0 $gap-lg 0;
+        > .portlet-body {
+            border-radius: $border-radius-base;
+            border-top-left-radius: 0;
+            border: 1px solid $gray-light;
+            padding: $gap-sm;
+            box-shadow: 0 2px 3px rgba(0,0,0,0.12);
+            @media(min-width: $screen-sm-min) {
+                padding: $gap-lg;
+            }
+        }
+        .form-group {
+            &:last-child {
+                margin: 0;
+            }
+        }
+        /**
+         * Override HTML, ideally this wouldn't be the case, but we cannot change the source HTML.
+         */
+        .col-md-3,
+        .col-md-9 {
+            @media(min-width: $screen-md-min) {
+                width: 50%;
+            }
+        }
+        .input-xsmall {
+            width: auto;
+            display: inline-block;
+            min-width: 50px;
+        }
+    }
+    #myTabContent2 {
+        > .portlet-body {
+            .form-group {
+                display: block !important;
+            }
+        }
+    }
+}
+
+
+
+/**
+ * Fix the HTML not having a <div class="row" />
+ */
+#ccDiv,
+#ddDiv {
+    > .portlet-body {
+        > .form-body {
+            @extend .row;
+        }
+    }
+}
+#myTabContent2 {
+    > .portlet-body {
+        @extend .row;
+    }
+}

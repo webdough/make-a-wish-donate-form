@@ -1,0 +1,103 @@
+/*======================================================================*\
+    Site Size
+\*======================================================================*/
+
+$site-xl: false !default;
+
+/*======================================================================*\
+    Colors
+\*======================================================================*/
+
+$gray-darker: #212121 !default; // Text
+$gray-dark: #757575 !default; // Secondary Text / Icons
+$gray: #BDBDBD !default; // Hint Text
+$gray-light: #E0E0E0 !default; // Dividers
+$gray-lighter: #f2f2f2 !default;
+
+$brand-default: #fff !default;
+$brand-default-dark: shade($brand-default, 10) !default;
+$brand-default-darker: shade($brand-default, 30) !default;
+$brand-default-light: tint($brand-default, 10) !default;
+$brand-default-lighter: tint($brand-default, 30) !default;
+$brand-default-color: $gray-darker !default;
+
+$brand-primary: #1563a0 !default;
+$brand-primary-dark: shade($brand-primary, 10) !default;
+$brand-primary-darker: shade($brand-primary, 30) !default;
+$brand-primary-light: tint($brand-primary, 10) !default;
+$brand-primary-lighter: tint($brand-primary, 30) !default;
+$brand-primary-color: #fff !default;
+
+$brand-secondary: #f1c80b !default;
+$brand-secondary-dark: shade($brand-secondary, 10) !default;
+$brand-secondary-darker: shade($brand-secondary, 30) !default;
+$brand-secondary-light: tint($brand-secondary, 10) !default;
+$brand-secondary-lighter: tint($brand-secondary, 30) !default;
+$brand-secondary-color: #fff !default;
+
+$brand-inverse: #212121 !default;
+$brand-inverse-dark: shade($brand-inverse, 10) !default;
+$brand-inverse-darker: shade($brand-inverse, 30) !default;
+$brand-inverse-light: tint($brand-inverse, 10) !default;
+$brand-inverse-lighter: tint($brand-inverse, 30) !default;
+$brand-inverse-color: #fff !default;
+
+$brand-success: #5cb85c !default;
+$brand-info: #5bc0de !default;
+$brand-warning: #f0ad4e !default;
+$brand-danger: #d9534f !default;
+
+/*======================================================================*\
+    Fonts
+\*======================================================================*/
+
+$font-base-color: #555B66 !default;
+$font-heading-base-color: $font-base-color !default;
+$font-size-base: 14px !default;
+$font-family-base: sans-serif !default;
+$font-family-heading: sans-serif !default;
+$font-family-heading-weight: bold !default;
+
+/*======================================================================*\
+    Sidebar
+\*======================================================================*/
+
+$sidebar-font-size: 14px !default;
+
+/*======================================================================*\
+    Colors - Buttons
+\*======================================================================*/
+
+$btn-default-color: $gray !default;
+$btn-default-bg: $brand-default !default;
+$btn-default-border: shade($btn-default-bg, 5) !default;
+
+$btn-primary-color: $brand-primary-color !default;
+$btn-primary-bg: $brand-primary !default;
+$btn-primary-border: shade($btn-primary-bg, 5) !default;
+
+$btn-secondary-color: $brand-secondary-color !default;
+$btn-secondary-bg: $brand-secondary !default;
+$btn-secondary-border: shade($btn-secondary-bg, 5) !default;
+
+$btn-inverse-color: $brand-inverse-color !default;
+$btn-inverse-bg: $brand-inverse !default;
+$btn-inverse-border: shade($btn-inverse-bg, 5) !default;
+
+/*======================================================================*\
+    Gaps
+\*======================================================================*/
+
+$gutter: 30px !default;
+
+$gap-xl: 64px !default;
+$gap-lg: 32px !default;
+$gap-md: 16px !default;
+$gap-sm: 8px !default;
+$gap-xs: 4px !default;
+
+/*======================================================================*\
+    Bootstrap
+\*======================================================================*/
+
+@import '../../components/public/bootstrap-sass/assets/stylesheets/bootstrap/variables';

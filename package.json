@@ -1,0 +1,23 @@
+{
+  "name": "make-a-wish-dontae-form",
+  "version": "0.1.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/webdough/make-a-wish-donate-form"
+  },
+  "devDependencies": {
+    "grunt": "*",
+    "grunt-contrib-watch": "*",
+    "grunt-contrib-sass": "*",
+    "grunt-contrib-cssmin": "*",
+    "grunt-combine-media-queries": "*",
+    "grunt-autoprefixer": "*",
+    "bower": "*",
+    "grunt-contrib-concat": "~0.5.1",
+    "grunt-contrib-uglify": "~0.9.1",
+    "grunt-contrib-csslint": "~0.4.0",
+    "grunt-contrib-jshint": "~0.11.1",
+    "matchdep": "~0.3.0",
+    "time-grunt": "~1.1.0"
+  }
+}
