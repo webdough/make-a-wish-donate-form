@@ -3278,6 +3278,32 @@ button.close {
 \*======================================================================*/
 
 /*======================================================================*\
+    Header
+\*======================================================================*/
+
+.header {
+	margin: 32px 0;
+}
+
+.header .logo {
+	text-align: center;
+}
+
+.header .logo img {
+	max-width: 60%;
+}
+
+.header .banner {
+	margin: 32px 0;
+	max-height: 256px;
+	overflow: hidden;
+}
+
+.header .banner img {
+	width: 100%;
+}
+
+/*======================================================================*\
     Footer
 \*======================================================================*/
 
@@ -3407,8 +3433,13 @@ input[type="text"].form-control {
     Main Content
 \*======================================================================*/
 
+img {
+	max-width: 100%;
+	height: auto;
+}
+
 #MainContent {
-	margin: 32px 0;
+	margin: 0 0 32px 0;
 }
 
 .clearBoth:before,
@@ -4015,6 +4046,10 @@ input[type="month"].input-lg,
 	width: 300px;
 }
 
+.header .logo {
+	text-align: left;
+}
+
 .footerbar .footer-left,
 .footerbar .footer-center,
 .footerbar .footer-right {
@@ -4035,7 +4070,7 @@ input[type="month"].input-lg,
 }
 
 #MainContent {
-	margin: 64px 0;
+	margin: 0 0 64px 0;
 }
 
 #TabContent .portlet-body {
